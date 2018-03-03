@@ -2,11 +2,11 @@
 
 This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is to have an example that lets us better understand one part of a Rails application, and not to have a perfect example. To that end this shopping example is purely for exploring behaviour driven devlopment (BDD).
 
-This shopping example is a simplified and modified version of a messy solution to Shopping Example at https://github.com/scharlau/Shopping_Exercise which is built upon from the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) We're using this example, because it lets us quickly get to the BDD parts that we want to explore. This example also uses the Faker Gem from https://github.com/stympy/faker to generate sample data for the application.
+This shopping example is a simplified and modified version of a messy solution to the BDD Shopping Example at https://github.com/scharlau/BDD_Shopping.
 
-The BDD example with RSpec and Capybara is based on examples found at https://robots.thoughtbot.com/rspec-integration-tests-with-capybara and some help from Stackoverflow to modify the rails_helper.rb file to find the session_helpers.rb file.
+This 'security' example is here to show how we move from an 'unsecure' to a 'more secure' site using OWASP approaches found at https://www.owasp.org/index.php/Main_Page and in particular the Rails Cheat Sheet at https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet and the Rails Guide on Security http://guides.rubyonrails.org/security.html
 
-Find more on Capybara and RSPec configuration at https://www.devmynd.com/blog/setting-up-rspec-and-capybara-in-rails-5-for-testing/
+# STILL A WORK IN PROGRESS #
 
 ## Setting Up the Exercises ##
 
