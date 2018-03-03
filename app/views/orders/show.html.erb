@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @order.customer.name %>
+  <%= @order.id %>
+</p>
+<p>
+  <strong>Order ID:</strong>
+  <%= @order.id %>
+</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Line Item</th>
+      <th>Product ID</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @line_items.each do |line_item| %>
+      <tr>
+        <td><%= line_item.id %></td>
+        <td>
+
+           <%= line_item.product.name %>
+
+        </td>
+        <td> <%= line_item.quantity %></td>
+
+      </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
