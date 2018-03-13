@@ -60,5 +60,5 @@ Which will launch the test system using the test database and should come back g
 
 
 1. Round one should be considering what you'd want to check when building such an app. One group should consider the benefits of 'build it and then think of the OWASP guides'. One group should consider the benefits of building with OWASP in mind as you build. What would these look like in practice?
-2. Round two should be drafting the steps a capybara test would take to check for what happens when you exceed the number of items in a table.
-3. Round three is adding more tests to test the integration of the models, or something else.
+2. Round two should be running brakeman on the app - just type 'brakeman' in the command line in the root of the app and it will generate a report for you.
+3. Round three is considering what you would do next for this app. What could you do to create a vulnerability for brakeman to find? Try it out.
