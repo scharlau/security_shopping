@@ -1,29 +1,25 @@
 # README for the Security Shopping Exercise #
 
-This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is to have an example that lets us better understand one part of a Rails application, and not to have a perfect example. To that end this shopping example is purely for exploring behaviour driven devlopment (BDD).
+This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is to have an example that lets us better understand one part of a Rails application, and not to have a perfect example. To that end this shopping example is purely for exploring security in a Rails application.
 
-This shopping example is a simplified and modified version of a messy solution to the BDD Shopping Example at https://github.com/scharlau/BDD_Shopping.
+This shopping example is a simplified and modified version of a messy solution to the BDD Shopping Example at https://github.com/scharlau/BDD_Shopping. This has some specific gem requirements, so check that you meet those if something isn't quite right.
+
+Look at the BDD example too if you're not sure about how that works, and why it's a useful approach to testing with Rails.
 
 This 'security' example is here to show how we move from an 'unsecure' to a 'more secure' site using OWASP approaches found at https://www.owasp.org/index.php/Main_Page and in particular the Rails Cheat Sheet at https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet and the Rails Guide on Security http://guides.rubyonrails.org/security.html
 
+By using the capybara components we can quickly check what's working or not for our code.
+
 # STILL A WORK IN PROGRESS #
+This is still a thought exercise. It will be worked on at a later date. For now the parts below relate to how you might make use of these ideas as part of a discussion.
+
+As an extra to show how security can be added during development this app uses the brakman gem to https://brakemanscanner.org highlight how your code can be scanned for vulnerabilities and thus fixed before they become an issue.
 
 ## Setting Up the Exercises ##
 
 Pull the Git repository via download, or by cloning to your computer. Run
 
     bundle install
-
-To get all of the gems sorted. You might have issues with the FFI gem. On a Mac I resolved these with Homebrew, which was used to install Rails. Use
-
-    brew install libffi
-    brew install automake
-
-Now you should be able to run
-
-    gem install ffi
-
-Then bundle install should complete.
 
 Now run the migrations with either rails or rake command depending upon your platform.
 
@@ -60,7 +56,9 @@ There is a simple example of how to create a customer under spec/features/create
 
 Which will launch the test system using the test database and should come back green because it works at creating a customer.
 
+### This is still a thought exercise ###
 
-1. Round one should be adding tests for the other models too. Each of them should go into files similar to the create_customer_spec.rb file and have methods added to the session_helpers.rb file.
-2. Round two should be creating a test for the 'dashboard' page to check something there.
+
+1. Round one should be considering what you'd want to check when building such an app. One group should consider the benefits of 'build it and then think of the OWASP guides'. One group should consider the benefits of building with OWASP in mind as you build. What would these look like in practice?
+2. Round two should be drafting the steps a capybara test would take to check for what happens when you exceed the number of items in a table.
 3. Round three is adding more tests to test the integration of the models, or something else.
