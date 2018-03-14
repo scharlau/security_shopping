@@ -56,8 +56,7 @@ There is a simple example of how to create a customer under spec/features/create
 
 Which will launch the test system using the test database and should come back green because it works at creating a customer.
 
-### This is still a thought exercise ###
-
+## This is still a thought exercise ##
 
 1. Round one should be considering what you'd want to check when building such an app. One group should consider the benefits of 'build it and then think of the OWASP guides'. One group should consider the benefits of building with OWASP in mind as you build. What would these look like in practice?
 2. Round two should be running brakeman on the app - just type 'brakeman' in the command line in the root of the app and it will generate a report for you in the console that's loaded into vi editor. You press enter until 'end' appears and then use :q to return to the console.
