@@ -10,7 +10,7 @@ This 'security' example is here to show how we move from an 'insecure' to a 'mor
 
 By using the capybara components we can quickly check what's working or not for our code.
 
-This is mostly a thought exercise. For now the parts below relate to how you might make use of these ideas as part of a discussion about web site security.
+#### This is mostly a thought exercise. For now the parts below relate to how you might make use of these ideas as part of a discussion about web site security. ####
 
 To show how security can be added during development this app uses the brakeman gem to https://brakemanscanner.org highlight how your code can be scanned for vulnerabilities and thus fixed before they become an issue. Another one that you might want to also look at in adding to this is http://gauntlt.org which is built with cucumber and gherkin to write scenarios around security tools.
 
