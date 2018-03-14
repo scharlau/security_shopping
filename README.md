@@ -57,6 +57,6 @@ Which will launch the test system using the test database and should come back g
 
 ## This is mostly a thought exercise ##
 
-1. Round one should be considering what you'd want to check when building such an app. See https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet One group should consider the benefits of 'build it and then think of the OWASP guides'. One group should consider the benefits of 'OWASP in mind as you build'. What would these two look like in practice?
+1. Round one should be considering what you'd want to check when building such an app. See the OWASP links above. One group should consider the benefits of 'build it and then think of the OWASP guides'. One group should consider the benefits of 'OWASP in mind as you build'. What would these two look like in practice?
 2. Round two should be running brakeman on the app - just type 'brakeman -o output_file' in the command line in the root of the app and it will generate a report for you as 'output_file' in the project directory.
 3. Round three is considering what you would do next for this app. What could you do to create a vulnerability for brakeman to find? Try it out.
