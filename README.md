@@ -37,6 +37,8 @@ After you start the rails server you can now see the following items in the appl
 
 When you start at localhost:3000 you're taken to orders/index which has a dashboard showing total orders by customers. (This still needs some rework, but that's for later. For now we just want a BDD example to use.)
 
+In this example the shopping cart doesn't work. That's something that I'll fix in a future update. For now it means you should not create cart objects as they will not show up on the page.
+
 ## Tests are independent ##
 Tests are run independent of each other, so there is no continuity when testing. If you want to build up content to test larger examples, then you need to create it within each scenario.
 
