@@ -6,7 +6,8 @@ This shopping example is a simplified and modified version of a messy solution t
 
 Look at the BDD example too if you're not sure about how that works, and why it's a useful approach to testing with Rails.
 
-This 'security' example is here to show how we move from an 'insecure' to a 'more secure' site using OWASP approaches found at https://www.owasp.org/index.php/Main_Page and in particular the Rails Cheat Sheet at https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet (now moved to GitHub at https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Ruby_on_Rails_Cheatsheet.md) and the Rails Guide on Security http://guides.rubyonrails.org/security.html
+This 'security' example is here to show how we move from an 'insecure' to a 'more secure' site using OWASP approaches found at https://www.owasp.org/index.php/Main_Page We can use this by first applying  the Rails Cheat Sheet at 
+https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheatsheet.html and the Rails Guide on Security http://guides.rubyonrails.org/security.html Second, we can also look at our application and apply the OWASP Top Ten Proactive Controls too, which are found at https://www.owasp.org/images/b/bc/OWASP_Top_10_Proactive_Controls_V3.pdf This has other suggestions to ensure you're building a securea application.
 
 By using the capybara components we can quickly check what's working or not for our code.
 
