@@ -15,6 +15,8 @@ By using the capybara components we can quickly check what's working or not for 
 
 To show how security can be added during development this app uses the brakeman gem to https://brakemanscanner.org highlight how your code can be scanned for vulnerabilities and thus fixed before they become an issue. Another one that you might want to also look at in adding to this is http://gauntlt.org which is built with cucumber and gherkin to write scenarios around security tools.
 
+You might also want to check your dependencies with the OWASP dependency checking tool https://www.owasp.org/index.php/OWASP_Dependency_Check - see links on the right of that page, and tabs across top for details of use.
+
 ## Setting Up the Exercises ##
 
 Pull the Git repository via download, or by cloning to your computer. Run
