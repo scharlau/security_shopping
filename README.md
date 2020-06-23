@@ -22,6 +22,8 @@ You might also want to check your dependencies with the OWASP dependency checkin
 Pull the Git repository via download, or by cloning to your computer. Run
 
     bundle install
+    rails webpacker:install
+    yarn install --missing files
 
 Now run the migrations with either rails or rake command depending upon your platform.
 
